@@ -1,0 +1,365 @@
+    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+    body {
+        font-family: 'Roboto', sans-serif;
+        padding: 80px 0 0 0;
+        margin: 0;
+    }
+    /* Configuração do nosso header/nav */
+    
+    header {
+        background-color: #45dfb0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    header h1 a {
+        color: #225d4c;
+        text-decoration: none;
+    }
+    
+    header nav ul {
+        display: flex;
+        list-style: none;
+    }
+    
+    header nav ul li {
+        margin: 0 20px;
+    }
+    
+    header nav ul li a {
+        color: #225d4c;
+        text-decoration: none;
+    }
+    /* Configuração do banner */
+    
+    #banner {
+        background-image: url(/img/banner.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 25rem;
+        width: 100%;
+    }
+    /* Configuração do conteudo de pescaria */
+    
+    #experiencias {
+        background-color: #88e2c7;
+        width: 100%;
+    }
+    
+    .exp1 {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .exp1 .img,
+    article {
+        width: 49vw;
+        padding: 20px;
+    }
+    
+    .exp1 .img {
+        background-image: url(/img/exp-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 4px;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        height: 20rem;
+    }
+    
+    .exp1 article {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        text-align: justify;
+    }
+    
+    .exp1 article h1 {
+        color: #1a4b3d;
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    
+    .exp2 {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .exp2 .img,
+    article {
+        width: 49vw;
+        padding: 20px;
+    }
+    
+    .exp2 .img {
+        background-image: url(/img/exp-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 4px;
+        -webkit-box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        height: 20rem;
+    }
+    
+    .exp2 article {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        text-align: justify;
+    }
+    
+    .exp2 article h1 {
+        color: #1a4b3d;
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    
+    #contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #45dfb0;
+        text-align: center;
+        height: 28rem;
+        width: 100%;
+    }
+    
+    #contato form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #contato form input {
+        height: 1.5rem;
+    }
+
+    #contato form input, textarea {
+        width: 20rem;
+        border: 2px solid #225d4c;
+        border-radius: 4px;
+    }
+
+    #contato form input, textarea::placeholder {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+
+    #contato form label {
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    #contato form button {
+        background-color: #225d4c;
+        border: 0 solid #225d4c;
+        border-radius: 4px;
+        color: #ffffff;
+        cursor: pointer;
+        margin: 5px;
+        height: 1.5rem;
+        width: 5rem;
+    }
+
+    footer {
+        background-color: #000000;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    @media (max-width: 320px) {
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            justify-content: space-between;
+        }
+
+        header h1, nav {
+            padding: 0 10px;
+        }
+
+        header nav ul {
+            display: none;
+        }
+
+        header span {
+            display: flex;
+            background-color: #225d4c;
+            border-radius: 10px;
+            height: 5px;
+            width: 30px;
+            margin: 5px;
+        }
+
+        #experiencias {
+            padding-top: 20px;
+        }
+
+        .exp1 {
+            display: block;
+            padding: 0;
+        }
+
+        .exp1 .img, article {
+            border-radius: 0;
+            width: 100%;
+            padding: 0;
+        }
+
+        .exp1 .img {
+            -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+            -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        }
+
+        .exp1 article h1, p {
+            padding: 10px;
+        }
+
+        .exp2 {
+            flex-direction: column-reverse;
+            padding: 0;
+        }
+
+        .exp2 .img, article {
+            border-radius: 0;
+            width: 100%;
+            padding: 0;
+        }
+
+        .exp2 .img {
+            -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+            -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        }
+
+        .exp2 article h1, p {
+            padding: 10px;
+        }
+
+        #contato form input, textarea {
+            width: 15rem;
+            border: 2px solid #225d4c;
+            border-radius: 4px;
+        }
+
+        footer {
+            font-size: 2pt;
+            text-align: center;
+        }
+
+    }
+
+    @media (max-width: 414px) {
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            justify-content: space-between;
+        }
+
+        header h1, nav {
+            padding: 0 10px;
+        }
+
+        header nav ul {
+            display: none;
+        }
+
+        header span {
+            display: flex;
+            background-color: #225d4c;
+            border-radius: 10px;
+            height: 5px;
+            width: 30px;
+            margin: 5px;
+        }
+
+        #experiencias {
+            padding-top: 20px;
+        }
+
+        .exp1 {
+            display: block;
+            padding: 0;
+        }
+
+        .exp1 .img, article {
+            border-radius: 0;
+            width: 100%;
+            padding: 0;
+        }
+
+        .exp1 .img {
+            -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+            -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        }
+
+        .exp1 article h1, p {
+            padding: 10px;
+        }
+
+        .exp2 {
+            flex-direction: column-reverse;
+            padding: 0;
+        }
+
+        .exp2 .img, article {
+            border-radius: 0;
+            width: 100%;
+            padding: 0;
+        }
+
+        .exp2 .img {
+            -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+            -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        }
+
+        .exp2 article h1, p {
+            padding: 10px;
+        }
+
+        footer {
+            font-size: 10pt;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+
+        #banner {
+            height: 20rem;
+        }
+
+        .exp1 .img {
+            height: 15rem;
+        }
+        
+        .exp2 .img {
+            height: 15rem;
+        } 
+
+    }
